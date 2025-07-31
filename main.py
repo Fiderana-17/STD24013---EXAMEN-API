@@ -5,6 +5,6 @@ from starlette.responses import Response
 
 app = FastAPI()
 
-@app.get("/")
-def root():
-    return Response(content=json.dumps({"message":"Hello there!"}),status_code=200, media_type="text/html")
+@app.get("/ping")
+def ping():
+    return Response(content="pong", media_type="text/plain", status_code=200);

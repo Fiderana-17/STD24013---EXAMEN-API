@@ -1,7 +1,6 @@
 import json
-from fastapi import FastAPI, Request, Response, status, HTTPException, Depends
+from fastapi import FastAPI, Request, Response
 from fastapi.responses import HTMLResponse, PlainTextResponse
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from pydantic import BaseModel
 from typing import List
 from datetime import datetime
